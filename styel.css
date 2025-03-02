@@ -1,0 +1,317 @@
+*{
+    
+    font-family: "Poppins", serif;
+    margin-top:0;
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+    overflow: hidden;
+         
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    margin-top: 10px;
+  
+    
+}
+
+.sidebar{
+   background-color:#121212;
+   width:340px;
+   border-radius:1rem;
+   margin-right: 0.5rem;
+   
+}
+.main-content{
+    background-color:#121212;
+    flex:1;
+    border-radius:1rem;
+    overflow:auto;
+    color: rgb(255, 255, 255);
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+
+.nav{
+    border-radius: 1 rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    background-color:rgb(41, 39, 39);
+   
+    
+
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem ;
+    
+    
+
+}
+.nav-option:hover{
+     opacity: 1;
+     
+       
+
+}
+.nav-option a{
+    font-size: 1rem;
+    
+    
+}
+.nav-option i{
+    font-size: 1.2rem;
+    
+    
+}
+.library{
+    border-radius: 1rem;
+    height: 100%;
+    margin-top:0.25rem;
+    padding: 0.5rem 0.75rem;
+    background-color:rgb(41, 39, 39);
+    
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+  
+}
+
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+.icons{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+}
+.icons i{
+   
+    opacity: 0.7;
+    margin-right: 1rem;
+    
+}
+.icons i:hover{
+   
+    opacity: 1;
+    
+    
+}
+
+.box{
+    background-color:#1f1f1f;
+    height: 6rem;
+    border-radius: 1rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding: 1.5rem 1.25rem;
+    
+
+
+
+}
+.box-para1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color:#1f1f1f;
+    
+
+}
+.box-para2{
+    font-size: 0.75rem;
+    opacity: 0.75;
+    background-color:#1f1f1f;
+    
+}
+.badge{
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+
+}
+.dark-badge{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.sticky-nav{
+    display: flex;
+    top:0;
+    justify-content:space-between;
+    background-color:#1f1f1f;
+    position: sticky;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+    /* height:2rem; */
+
+}
+.sticky-nav-icon {
+    /* height: 1rem;;
+    width: 1rem; */
+    margin-left:0.75rem;
+
+}
+.sticky-nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-right: 2rem;
+    
+}
+.nav-item{
+    margin-right: 1.5rem;
+}
+
+@media(max-width:1000px){
+    .hide{display: none;}
+}
+.card-container{
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+   
+
+}
+.card{
+   
+    background-color: #1f1f1f;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    opacity: 0.5;
+    font-size: 1rem;
+
+}
+
+.footer{
+    height: 300px;  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.line{
+    width:  90%;
+    height: 30%;
+    border-top: 1px solid gray;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+.control{
+    width: 25%;
+}
+.img-icons{
+    height: 30px;
+    width: 2rem;
+    margin-right: 2rem;
+    opacity: 0.5;
+}
+.img-icons:hover{
+    opacity: 1;
+}
+.player-controlbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prograss-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.pog{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 1rem;
+}
+.pog::-webkit-slider-runnable-track{
+    background-color: #dddd;
+    border-radius: 100%;
+    height: 0.2rem;
+
+}
+.pog::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(104, 189, 7);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-top:-6px;
+    
+
+}
+
+
+
+
+
+/* .navbar{
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    top:0px;
+    width: 100%;
+    height: 72px;
+}  */
